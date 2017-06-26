@@ -9,4 +9,4 @@ A branch splits off from the master version. It's a clone of the master, but all
 * What is a commit? What makes a good commit message?
 A commit is recording a change to the repository. So if you first change a file and save it, you now need to commit that change to update the repository. A good commit message should be specific so any future user can understand what was changed.
 * What is a merge conflict?
-A merge conflict is when the master and branch cannot be merged back together due to an issue, such as different code changes on the same line and file in differnt branches. You must resolve a merge conflict in order to merge the branch and master back together. 
+A merge conflict is when the master and branch cannot be merged back together due to an issue, such as different code changes on the same line and file in differnt branches. You must resolve a merge conflict in order to merge the branch and master back. 
