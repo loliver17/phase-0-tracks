@@ -11,3 +11,9 @@
 .accomplishments {
 	font-size: .8em;
 }
+.accomplishments:hover{
+	background-color: blue;
+}
+ul > li {
+	background-color: yellow;
+}
