@@ -1,0 +1,22 @@
+Using an Elevator:
+
+- Look at the address you are travelling to, and read the floor number.
+- If no floor is listed, the suite/unit number indicates which floor. The 1st number indicates which floor for floors 1-9, and the 1st 2 numbers indicate which floor for floors 10-99. A '0' usually follows the floor number. 
+- Determine which floor you are on by looking at the elevator frame.
+- If the floor you need is a larger number than the floor you're currently on, hit the up button next to the elevator. If the floor you need is a smaller number than the floor you're currently on, hit the down button. 
+- The button you hit will light up.
+- Wait until the elevator door opens, and walk inside. 
+- Hit the button of the floor you determined in the first step. The button will light up, and the doors will close.
+- Once the doors reopen, and the elevator frame shows the same floor number you need, walk off the elevator.
+
+Make Coffee:
+
+- Fill the electric kettle with water, put on lid, and push on button.
+- Open the coffee canister. Put 4 heaping scoops of the 2-tablesppon scooper into the french press.
+- Once the electric kettle switches off, fill the french press with the hot kettle water.
+- Stir the water and coffee grinds with a wood or silicone spoon.
+- Put the french press lid on.
+- Wait 4 minutes for coffee to steep.
+- Hold th lid down, and very slowly press the strain plunger down into the french press.
+- Keeping the lid on, pour coffee into a mug.
+- Add cream and 1 teaspoon of sugar, and stir.
