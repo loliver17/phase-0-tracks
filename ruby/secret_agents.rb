@@ -33,3 +33,27 @@ end
 
 encrypt("zebra")
 
+# Use the same code as encrypt method, changing method name to decrypt
+# In if/else statement have final integer of 0 cycle back to 25,
+# otherwise have integer decrease by 1.
+
+def decrypt(password)
+  index = 0
+  new_password = ""
+  letters = "abcdefghijklmnopqrstuvwxyz" 
+
+  while index < password.length
+   integers = letters.index(password[index]) #convert letters to integers
+    if integers == 0
+      restart_index = 25
+    else 
+      restart_index = integers - 1
+    end  
+  new_password += letters[restart_index]
+  index += 1
+  end
+  new_password
+end
+
+decrypt("abc")
+
