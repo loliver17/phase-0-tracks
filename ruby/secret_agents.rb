@@ -59,3 +59,9 @@ end
 puts decrypt("bcd")
 puts decrypt("afe")
 
+puts decrypt(encrypt("swordfish"))
+# It worked because we're using a method as an argument to another method.
+# In other words, we called the encrypt method, passing in the argument
+# "swordfish", and the returned result "txpsegjti" was passed as the argument into
+# the decrypt method.
+
