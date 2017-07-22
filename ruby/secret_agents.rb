@@ -31,7 +31,8 @@ def encrypt(password)
   new_password
 end
 
-encrypt("zebra")
+puts encrypt("abc")
+puts encrypt("zed")encrypt("zebra")
 
 # Use the same code as encrypt method, changing method name to decrypt
 # In if/else statement have final integer of 0 cycle back to 25,
@@ -55,5 +56,6 @@ def decrypt(password)
   new_password
 end
 
-decrypt("abc")
+puts decrypt("bcd")
+puts decrypt("afe")
 
