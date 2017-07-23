@@ -43,14 +43,53 @@ def new_employee
 
 	# vampire detection logic added
 	#check all conditions and base result on latest
+	#if/else is returning 1st matching result, not continuing to check,
+	#find another method
 	
-	if boolean_age && (garlic_bread || insurance)
-	  vampire_status = "Probably not a vampire."
-	elsif !boolean_age && (!garlic_bread || !insurance)
-	  vampire_status = "Probably a vampire."
-	elsif !boolean_age && !garlic_bread && !insurance
-	  vampire_status = "Almost certainly a vampire."
-	end
-	p vampire_status
+	#while vampire_status != "Results inconclusive" #tried to force code to continue
+	#checking 
+  #	if boolean_age && (garlic_bread || insurance)
+  #	  vampire_status = "Probably not a vampire."
+  #	elsif !boolean_age && (!garlic_bread || !insurance)
+  #	  vampire_status = "Probably a vampire."
+  #	elsif !boolean_age && !garlic_bread && !insurance
+  #	  vampire_status = "Almost certainly a vampire."
+  	#name == "Drake Cula || Tu Fang"
+  	 # vampire_status = "Definitely a vampire."
+   
+  	  #vampire_status = "Results inconclusive"
+  	#end
+  #end
+	 # p vampire_status
+	  
+	#Conditional logic with only if statements 
+	
+	
+	  vampire_status = "Probably not a vampire." if boolean_age && (garlic_bread || insurance) == true
+	  vampire_status = "Probably a vampire." if !boolean_age && (!garlic_bread || !insurance) == true
+	  vampire_status = "Almost certainly a vampire." if !boolean_age && !garlic_bread && !insurance == true
+	  #not working for Tu Fang
+	  #vampire_status = "Definitely a vampire." if name == ("Drake Cula || Tu Fang")
+	  vampire_status = "Definitely a vampire." if name == "Tu Fang"
+	  vampire_status = "Definitely a vampire." if name == "Drake Cula"
+	  #return vampire_status
+	  #if vampire_status == nil
+	   # vampire_status = "Results inconclusive"
+	  #end
+	  
+	  p vampire_status
+
+	 
+	 
+	 
+	#checking case statement, expected to not work
+	#case x
+	#when boolean_age && (garlic_bread || insurance)
+	 # puts "Probably not a vampire."
+	#when !boolean_age && (!garlic_bread || !insurance)
+	 # puts "Probably a vampire."
+	#when !boolean_age && !garlic_bread && !insurance
+	 # puts "Almost certainly a vampire."
+	#end
 	
 end
