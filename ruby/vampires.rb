@@ -103,7 +103,9 @@ puts "How many employees will be processed?"
   x = x.to_i
   p x
   
-until x == 0
+until x <= 0
   puts new_employee
   x -= 1
 end
+
+puts "Actually, never mind! What do these questions have to do with anything? Let's all be friends."
