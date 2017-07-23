@@ -72,6 +72,7 @@ def new_employee
 	  #vampire_status = "Definitely a vampire." if name == ("Drake Cula || Tu Fang")
 	  vampire_status = "Definitely a vampire." if name == "Tu Fang"
 	  vampire_status = "Definitely a vampire." if name == "Drake Cula"
+	  vampire_status = "Results inconclusive." if vampire_status == nil
 	  #return vampire_status
 	  #if vampire_status == nil
 	   # vampire_status = "Results inconclusive"
@@ -92,4 +93,17 @@ def new_employee
 	 # puts "Almost certainly a vampire."
 	#end
 	
+end
+
+#Ask user how many employees to process,
+#and loop method until all are done
+
+puts "How many employees will be processed?"
+  x = gets.chomp
+  x = x.to_i
+  p x
+  
+until x == 0
+  puts new_employee
+  x -= 1
 end
