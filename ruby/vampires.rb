@@ -41,6 +41,22 @@ def new_employee
 		end
 		p insurance
 
+#Add loop for allergy question	
+  
+    loop do
+      puts "List any allergies you have one at a time, and write done when finished."
+      allergies_answer = gets.chomp
+      if allergies_answer == 'done'
+        break
+      end
+      if allergies_answer == 'sunshine'
+        #allergies_answer = true
+      #else 
+        #allergies_answer = false
+        break #break or next? need to skip to result of "probably a vampire"
+      end  
+    end  		
+
 	# vampire detection logic added
 	#check all conditions and base result on latest
 	#if/else is returning 1st matching result, not continuing to check,
