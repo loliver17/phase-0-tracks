@@ -43,19 +43,35 @@ def new_employee
 
 #Add loop for allergy question	
   
-    loop do
-      puts "List any allergies you have one at a time, and write done when finished."
-      allergies_answer = gets.chomp
-      if allergies_answer == 'done'
-        break
-      end
-      if allergies_answer == 'sunshine'
+    #loop do
+     # puts "List any allergies you have one at a time, and write done when finished."
+     # allergies_answer = gets.chomp
+     # if allergies_answer == 'done'
+     #   break
+     # end
+     # if allergies_answer == 'sunshine'
         #allergies_answer = true
       #else 
         #allergies_answer = false
-        break #break or next? need to skip to result of "probably a vampire"
-      end  
-    end  		
+     #   break #break or next? need to skip to result of "probably a vampire"
+     # end  
+    #end 
+    
+    #trying until loop to define variable outside loop 
+    allergies_answer = false
+    answer = ""
+   
+    until allergies_answer
+      puts "List your allergies one at a time, and write done when finished."
+      answer = gets.chomp
+        if answer == 'done'
+          break
+        end  
+        if answer == 'sunshine'
+          break allergies_answer = true
+        end
+    end   
+  	
 
 	# vampire detection logic added
 	#check all conditions and base result on latest
