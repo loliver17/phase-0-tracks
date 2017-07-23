@@ -40,4 +40,17 @@ def new_employee
 			insurance = false
 		end
 		p insurance
+
+	# vampire detection logic added
+	#check all conditions and base result on latest
+	
+	if boolean_age && (garlic_bread || insurance)
+	  vampire_status = "Probably not a vampire."
+	elsif !boolean_age && (!garlic_bread || !insurance)
+	  vampire_status = "Probably a vampire."
+	elsif !boolean_age && !garlic_bread && !insurance
+	  vampire_status = "Almost certainly a vampire."
+	end
+	p vampire_status
+	
 end
