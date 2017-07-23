@@ -71,7 +71,7 @@ def new_employee
           break allergies_answer = true
         end
     end   
-  	
+
 
 	# vampire detection logic added
 	#check all conditions and base result on latest
@@ -104,6 +104,7 @@ def new_employee
 	  #vampire_status = "Definitely a vampire." if name == ("Drake Cula || Tu Fang")
 	  vampire_status = "Definitely a vampire." if name == "Tu Fang"
 	  vampire_status = "Definitely a vampire." if name == "Drake Cula"
+	  vampire_status = "Probably a vampire." if allergies_answer == true
 	  vampire_status = "Results inconclusive." if vampire_status == nil
 	  #return vampire_status
 	  #if vampire_status == nil
