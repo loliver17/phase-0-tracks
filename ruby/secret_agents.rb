@@ -31,8 +31,8 @@ def encrypt(password)
   new_password
 end
 
-puts encrypt("abc")
-puts encrypt("zed")encrypt("zebra")
+#puts encrypt("abc")
+#puts encrypt("zed")encrypt("zebra")
 
 # Use the same code as encrypt method, changing method name to decrypt
 # In if/else statement have final integer of 0 cycle back to 25,
@@ -56,12 +56,33 @@ def decrypt(password)
   new_password
 end
 
-puts decrypt("bcd")
-puts decrypt("afe")
+#puts decrypt("bcd")
+#puts decrypt("afe")
 
-puts decrypt(encrypt("swordfish"))
+#puts decrypt(encrypt("swordfish"))
 # It worked because we're using a method as an argument to another method.
 # In other words, we called the encrypt method, passing in the argument
 # "swordfish", and the returned result "txpsegjti" was passed as the argument into
 # the decrypt method.
+
+# Driver Code
+
+# Ask user for input on which method they want, and assign
+# their answer to a variable
+# Ask user for the password and assign their answer to a variable
+# Use if/else statement to call method based on user's input for both variables
+# exit program?
+  
+puts "Do you want to decrypt or encrypt a password?"
+method_name = gets.chomp
+
+puts "What password do you want to use?"
+password = gets.chomp
+
+if method_name == "encrypt"
+  puts encrypt(password)
+else 
+  puts decrypt(password)
+end
+puts "Mission complete."
 
