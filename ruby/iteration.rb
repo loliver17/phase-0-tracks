@@ -1,3 +1,4 @@
+#method that takes a block of code
 def names
 	puts "what is your name?"
 	name_1 = gets.chomp
@@ -10,6 +11,7 @@ end
 
 names { |name_1, name_2| puts "Hi #{name_1} and #{name_2}!" }
 
+#declare an array and hash
 pets = ['Sacha', 'Zeke', 'Mack', 'Zoe', 'Lou']
 favorite_pets = {Sacha: '3rd', Zeke: '2nd', Mack: '5th', Zoe: '4th', Lou: '1st'}
 
@@ -36,7 +38,7 @@ end
 puts "After .map! call:"
 p pets	
 
-#.each on the hash data structure
+#.each on the favorite_pets hash
 puts "Original data:" 
 p favorite_pets
 
@@ -46,4 +48,17 @@ end
 
 puts "After .each call:"
 p favorite_pets
+
+#.map on the favorite_pets hash
+puts "Original data:"
+p favorite_pets
+
+new_favorite_pets = favorite_pets.map do |pet, rank|
+	puts "#{pet} is ranked #{rank}"
+	#rank.next
+end
+
+puts "After .map call:"
+p favorite_pets
+p new_favorite_pets
 
