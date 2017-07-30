@@ -60,4 +60,51 @@ end
 puts "After .map call:"
 p favorite_pets
 
+#method that deletes any item meeting specific condition
+array = [10, 20, 30, 40, 50, 60, 70]
+hash = {a: 1, b: 2, c: 3, d: 4, e: 5, f: 6}
+
+p array
+p hash
+
+array.delete_if {|i| i < 60 }
+p array
+
+hash.delete_if {|letter, number| number <= 3 }
+p hash
+
+#method that filters data structure to only items meeting certain 
+#condition
+array = [10, 20, 30, 40, 50, 60, 70]
+hash = {a: 1, b: 2, c: 3, d: 4, e: 5, f: 6}
+
+array.keep_if {|i| i < 50}
+p array
+
+hash.keep_if {|letter, number| number < 4 }
+p hash
+
+
+#method 2nd option for filtering
+array = [10, 20, 30, 40, 50, 60, 70]
+hash = {a: 1, b: 2, c: 3, d: 4, e: 5, f: 6}
+
+new_array = array.select {|i| i >= 30 }
+p new_array
+
+new_hash = hash.select {|letter, number| number > 4 }
+p new_hash
+
+#method that removes items from data structure until condition 
+#evaluates to false, then stops
+array = [10, 20, 30, 40, 50, 60, 70]
+hash = {a: 1, b: 2, c: 3, d: 4, e: 5, f: 6}
+
+new_array = array.drop_while {|i| i < 40 }
+p new_array
+
+new_hash = hash.drop_while {|letter, number| number < 3}
+p new_hash
+
+
 
