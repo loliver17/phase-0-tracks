@@ -53,12 +53,11 @@ p favorite_pets
 puts "Original data:"
 p favorite_pets
 
-new_favorite_pets = favorite_pets.map do |pet, rank|
+favorite_pets.map do |pet, rank|
 	puts "#{pet} is ranked #{rank}"
-	#rank.next
 end
 
 puts "After .map call:"
 p favorite_pets
-p new_favorite_pets
+
 
