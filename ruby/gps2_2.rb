@@ -55,3 +55,30 @@ add_item(grocery_list, "pear")
 remove_item(grocery_list, "banana")
 add_item(grocery_list, "apple", 5)
 look_pretty(grocery_list)
+
+#Reflect
+#1. Pseudocoding made it very easy to move on to each new method during the
+#coding process, and we didn't have to think about what we were going to do
+#again, it was already written out. Definitely helped our efficiency.
+#2. I don't even know how an array would work for this challenge, it seemed clear
+# that the only option was a hash since we needed to store a quantity for each 
+#grocery item. It made it much easier to change just the quantity, rather than 
+#changing both item and quantity if we stored the data as longer strings in a hash.
+#3. A method returns a value, which is usually the implicit return on the last line 
+#of code it runs.
+#4. You can pass a lot of stuff into a method as an argument. You could pass strings,
+#integers, floats, arrays, hashes, the return value of other methods.
+#5. You could define a variable outside the methods to call on with each method, 
+# and build on that variable. 
+#6. The concept of defining a variable outside a method and also that the parmaeter 
+#names and names used in code need to match were solidified. I still get confused 
+#on passing parameter and methods as parameters into other methods. Thsi challenge
+#helped a lot, but I need to wrap my head around where variables can be defined
+#and called on again, and parameters. 
+
+
+
+
+
+
+
